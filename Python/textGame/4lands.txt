@@ -1,0 +1,89 @@
+print('Welcome to 4lands')
+
+print('Morfeusz proponuje ci dwie tabletki czerwona i niebieska')
+
+while True:
+  tabletka = input('Ktora wybierasz czerwona czy niebieska [C/N] \n')
+  if tabletka == "C":
+    print('Lykasz tabletke i zasypiasz...')
+    print('Budzisz siê na bagnach.')
+    location = "las"
+    kierunek = "E"
+
+    while kierunek != "END":
+      if location == "las":
+
+        if kierunek == "E":
+          location = "bagno"
+          print('Opis bagna')
+          print('Dostepne kierunki: S, W')
+
+        elif kierunek == "S":
+          location = "polana"
+          print('Opis polana')
+          print('Dostepne kierunki: N, E')
+
+        else:
+          print('Nie mo¿esz tam pojsc!')
+
+        kierunek = input('>>')
+
+      elif location == "bagno":
+
+        if kierunek == "S":
+          location = "gory"
+          print('Opis gor')
+          print('Dostepne kierunki: N, W')
+
+        elif kierunek == "W":
+          location = "las"
+          print('Opis lasu')
+          print('Dostepne kierunki: S, E')
+
+        else:
+          print('Nie mo¿esz tam pojsc!')
+
+        kierunek = input('>>')
+        
+
+      elif location == "gory":
+        if kierunek == "N":
+          location = "bagno"
+          print('Opis bagna')
+          print('Dostepne kierunki: S, W')
+
+        elif kierunek == "W":
+          location = "polana"
+          print('Opis polany')
+          print('Dostepne kierunki: N, E')
+
+        else:
+          print('Nie mo¿esz tam pojsc!')
+
+        kierunek = input('>>')
+
+      elif location == "polana":
+        if kierunek == "N":
+          location = "las"
+          print('Opis lasu')
+          print('Dostepne kierunki: S, E')
+
+        elif kierunek == "E":
+          location = "gory"
+          print('Opis gor')
+          print('Dostepne kierunki: N, W')
+
+        else:
+          print('Nie mo¿esz tam pojsc!')
+
+        kierunek = input('>>')
+
+      elif location == "END":
+        print('You are leaving 4lands')
+
+  elif tabletka=="N":
+    print('Opuszczasz gre 4lands')
+    break
+    
+  else:
+    print('Nie mozesz tego wybrac')
