@@ -1,0 +1,17 @@
+import random
+
+print("Guess the number!")
+
+number = random.randint(1,100)
+X = int(input("Type the number\n"))
+
+while X != number:
+  if X < number:
+    print("Type bigger number!")
+    X = int(input("\n"))
+
+  else:
+    print("Smaller number")
+    X = int(input("\n"))
+
+print("Congratulations this is correct number!")
