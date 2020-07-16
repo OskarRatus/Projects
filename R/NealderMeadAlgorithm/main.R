@@ -23,7 +23,7 @@ for (i in 1 : nGrid) {
 # plot function
 contour(x_seq, x_seq, z_matrix)
 
-# Animate search
+# Animate search Nealder-Mead
 for (i in 1 : length(nd$simp_hist[,1])) {
   lines(x=nd$simp_hist[c(seq(3 * i - 2, i *3 ), 3 * i -2),1], y=nd$simp_hist[c(seq(3 * i - 2, i *3 ), 3 * i -2),2], col = "red")
   Sys.sleep(1)
