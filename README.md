@@ -2,11 +2,11 @@
 Oskar Ratus <br>
 
 Include projects: <br>
--Radar returns classification
+-Radar returns classification <br>
 file.RMD
 
--Wildfire analysis
+-Wildfire analysis <br>
 file.r
 
--Optimization algorithms
+-Optimization algorithms <br>
 file.r
